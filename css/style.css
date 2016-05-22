@@ -1,0 +1,426 @@
+*{ margin: 0;padding: 0;}
+ul li{ list-style: none;}
+a{ text-decoration: none; color: #757575;}
+img {
+    display: block;
+    border: none;
+}
+body{ font: 14px/1.5 "Microsoft YaHei"; color: #333; background-color: #fff; min-width: 1226px;}
+.site-topbar{
+    position: relative;
+    z-index: 30;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+.container{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    /*margin:0 auto和上面的代码是一样的*/
+}
+.container2{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    /*margin:0 auto和上面的代码是一样的*/
+}
+.site-topbar .topbar-nav{
+float: left;height: 40px; line-height: 40px; overflow: hidden;
+}
+.site-topbar a{color: #b0b0b0;}
+.topbar-nav a:hover{ color: #ffffff;}
+.site-topbar .sep{ margin: 0.5rem;color: #424242;}
+.sep,.ndash{ font-family: sans-serif;margin: 0.25em;}
+.site-topbar .topbar-info a:hover{ color: #ffffff;}
+.site-topbar .topbar-info{
+    position: relative; float: right; height: 40px; line-height: 40px;
+}
+.site-topbar .topbar-cart:hover{ background: white;}
+.site-topbar .topbar-cart{
+    line-height: 40px;
+    text-align: center;
+    position: relative; float: right; height: 40px; width: 120px;background: #424242;}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 40px;
+}
+
+/*导航 内容*/
+.site-header{ position: relative; z-index: 20; height: 100px;}
+.site-header .header-logo{ float: left; width: 62px; margin-top: 22px;}
+.site-header .header-nav{ float: left; width: 850px;}
+.site-header .nav-list{
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 880px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+    margin-left: -30px;
+}
+.nav-list .nav-list01{margin-top: 6px; margin-left: -9px;}
+.nav-list .nav-list02{ margin-left: 9px;}
+.header-nav .nav-list li{ float: left; margin-left: 30px; line-height: 75px; height: 88px;}
+.header-nav .nav-list li a:hover{ color: tomato;}
+.site-header .header-search{ float: right; width: 296px; margin-right: -75px; position: relative;}
+.site-header .search-text{ position: absolute;  top:23px; right: 130px; z-index: 1; width: 200px; height: 48px;
+padding: 0 0px; border: 1px solid #e0e0e0; font-size: 14px; line-height: 48px; outline: 0;}
+.site-header .search-btn{ position: absolute; top:23px; width: 52px; height: 50px;border: 1px solid #e0e0e0;
+font-size: 24px; line-height: 24px; background: #fff; color: #616161;outline: 0; right: 79px;
+     background-image: url("../img/searchh.jpg");background-position: 0px 6px;
+}
+/*轮播见lb.css*/
+
+/*左侧悬浮导航*/
+.site-category{ position: absolute; z-index:21; width: 234px; height: 460px; font-size: 14px;
+    top:0px; left: 0px; background: rgba(0,0,0,0.6);}
+.site-category li{ width: 234px; height: 42px; line-height: 42px;}
+.site-category li div{  display: none;
+    position: absolute;
+    left: 234px;
+    top: 1px;
+    width: 900px;
+    height: 370px;
+    background: #fff;
+    z-index: 55;}
+.site-category li a{  color: #ffffff; margin-left: 30px;}
+.site-category li:hover{  background: #ff6700;}
+.site-category01{ margin-top: 30px;}
+/*轮播下面广告位*/
+.home-hero-sub {
+    margin-top: 14px;
+}
+.row{ margin-left: -14px;}
+.spa4{ float: left;min-height: 1px; margin-top: 15px;}
+.home-hero-slider{ margin-top: 15px;}
+.slt li{ float: left; width: 316px; height: 170px; transition: box-shadow .2s linear; margin-left: 15px;}
+.slt li img{ width: 100%;}
+/*明星单品*/
+.mx-jt{ float: right; margin-top: -45px;}
+.mx-jt a{ float: left;}
+.list3{ height: 340px; position:relative;  top: 0; display: block;}
+.list3 li{ float: left;}
+.list3 li img{ padding: 0 40px;}
+.list3 li .title{margin: 0 10px;  font-size: 14px;  font-weight: 400;  text-align: center;}
+.list3 li .price{margin: 0  10px;  text-align: center;  color: #ff6700; }
+.list3 li .rank {  margin: 20px 10px;  font-size: 12px;  text-align: center;  text-overflow: ellipsis;
+    white-space: nowrap;  overflow: hidden;  _zoom: 1;  color: #b0b0b0;  }
+.container{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    /*margin:0 auto和上面的代码是一样的*/
+}
+.mx-box{ width: 1226px; height: 320px;overflow: hidden; position: relative; padding-bottom:40px; margin-top: 30px; }
+.boxcent2{ width:2480px; height: 340px; position:absolute;transition: left 1s }
+.boxcent2 li{
+    height: 220px;
+    padding-top: 39px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    background: #fafafa;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    float: left;margin-left: 25px;}
+.boxcent2 li a{ width: 160px; height: 160px; margin: 20px auto;}
+.boxcent2 li h3.title{
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.boxcent2 li h3 .desc {
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    _zoom: 1;
+    color: #b0b0b0;
+}
+.boxcent2 li h3 .price {
+    margin: 0;
+    color: #ff6709;
+    text-align: center;
+}
+
+/*搭配*/
+.box-hd2{ position: relative; }
+ .box-hd{ position: relative; height: 58px;}
+ .box-hd .title{ margin: 0; font-size: 22px; font-weight:200; line-height: 58px; color: #333;}
+ .more{position: absolute;  top:0; right: 0; }
+.tab_list{ margin: 0; padding: 16px 0 0; list-style-type: none; font-size: 16px;}
+.tab_list li{ float: left; margin-left: 20px; cursor: pointer;}
+.active{ color: #ff6700; border-bottom: 2px solid #ff6700;}
+.shop div{ display: none;}
+.shop div.active2{ display: block;}
+.brick-promo-list{ height: 614px;}
+
+/*商品*/
+.brick-promo-list li{ margin-top: 10px;}
+.brick-item{position: relative;  z-index: 1;  float: left;  width: 234px;  margin-left: 14px;
+    margin-bottom: 14px;  background: #fff;-webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;}
+.brick-item-m{  height: 246px; padding: 34px 0 18px; position: relative;}
+.brick-item.brick-item-m span{    width: 234px;
+    height: 80px;
+    display: block;
+    background: #ff6700;
+    position: absolute;
+    top: 326px;
+}
+.brick-item:hover span{
+    width: 234px;
+    top: 150px;
+    transition: top 1s;
+    top: 222px;
+}
+
+
+
+.brick-item:hover{-webkit-box-shadow: #b1b1b1 0px 0px 7px;
+    -webkit-transform: translateY(-5px);
+    -moz-box-shadow: #b1b1b1 0px 0px 7px;
+    -moz-transform: translateY(-5px);
+    -ms-box-shadow: #b1b1b1 0px 0px 7px;
+    -ms-transform: translateY(-5px);
+    -o-box-shadow: #b1b1b1 0px 0px 7px;
+    -o-transform: translateY(-5px);
+    box-shadow: #b1b1b1 0px 0px 7px;
+    transform: translateY(-5px);}
+.list2{ height: 614px; position:relative; left: 230px; top: 0; display: block;margin-top: -630px;
+    }
+.list2 li img{ padding: 0 40px;}
+.list2 li .title{margin: 0 10px;  font-size: 14px;  font-weight: 400;  text-align: center;}
+.list2 li .price{margin: 0  10px;  text-align: center;  color: #ff6700; }
+.list2 li .rank {  margin: 20px 10px;  font-size: 12px;  text-align: center;  text-overflow: ellipsis;
+    white-space: nowrap;  overflow: hidden;  _zoom: 1;  color: #b0b0b0;  }
+/*购物车*/
+
+.menu {
+    height: 40px;
+    background: #333;
+}
+
+.menu .menuCon {
+    margin: 0 auto;
+    width: 1226px;
+}
+
+.menu .menuCon .shop {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+}
+
+.menu .menuCon .shop.bg {
+    background: #fff;
+    color: orange;
+}
+
+.shopDetail {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 316px;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 3px 8px 10px 0 #ccc;
+}
+
+/**/
+
+.navLiDetail {
+    display: none;
+    position: absolute;
+    left: 234px;
+    top: 1px;
+    width: 900px;
+    height: 370px;
+    background: #fff;
+    z-index: 55;
+}
+
+.navLiDetail li {
+    float: left;
+    padding: 18px 20px;
+    width: 225px;
+    height: 40px;
+}
+
+.navLiDetail li img, .navLiDetail li span, .navLiDetail li a {
+    display: block;
+    float: left;
+}
+
+.navLiDetail li img {
+    width: 40px;
+    height: 40px;
+}
+
+.navLiDetail li span {
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.navLiDetail li a {
+    float: right;
+    margin-top: 8px;
+    width: 58px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #ff6700;
+}
+
+.navLiDetail li a:hover {
+    background: #f25807;
+    border-color: #f25807;
+    color: #fff;
+}
+
+
+/*结束部分*/
+.footer{
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer ul li{
+    float: left;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    width: 19.8%;
+}
+.footer li span{ width: 50px; height: 25px; display: inline-block;}
+
+.site-footer .footer-links {
+    padding: 40px 0;
+}
+
+.site-footer .footer-links .col-links {
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+}
+dl, menu, ol, ul {
+    margin: 1em 0;
+}
+.site-footer .footer-links .col-links dt {
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.site-footer .footer-links .col-links dd {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+ .col-contact {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+ .col-contact .phone {
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+     margin-top: 15px;
+}
+ .col-contact p {
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.btn-line-primary {
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+}
+.btn-small {
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+}
+.btn {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    width: 158px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #b0b0b0;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+a {
+    color: #757575;
+    text-decoration: none;
+}
+.col-links{ float: left; margin-left: 100px;}
+
+.sbox2{
+    width: 250px; height: 300px; position: absolute;
+    top:72px; right: 65px;
+    border: 1px solid chartreuse;
+    z-index: 5;
+    background: #ffffff;
+}
+.sbsect{
+    position: absolute;  top:23px; right: 130px; z-index: 1; width: 200px; height: 48px;
+    padding: 0 0px; border: 1px solid #e0e0e0; font-size: 14px; line-height: 48px; outline: 0;
+    border: 1px solid chartreuse;
+}
+.search-btn2{ position: absolute; top:23px; width: 52px; height: 50px;
+    font-size: 24px; line-height: 24px; background: #fff; color: #616161;outline: 0; right: 79px;
+    background-image: url("../img/searchh.jpg");background-position: 0px 6px;
+    border: 1px solid chartreuse
+}
+
+.sbox3{
+    font-size: 12px;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+    z-index: 8;background: goldenrod;
+}
+.sbox3:hover{ background: red;}

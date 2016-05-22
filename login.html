@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米账号登陆</title>
+    <style>
+        body {
+            background: #f5f5f5;
+            color: #757575;
+        }
+        html, body {
+            height: 100%;
+        }
+        ul,li{ list-style: none;}
+        body {
+            font-size: 12px;
+            font-family: arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","微軟正黑體","儷黑 Pro",sans-serif;
+        }
+        .wrapper{
+            width: 100%;
+            min-height: 100%;
+            height: auto;
+        }
+        .wrap{
+            width: 100%;
+            min-height: 100%;
+            height: auto;
+        }
+        .layout {
+            background-color: #fff;
+            width: 854px;
+            margin: 0 auto 20px;
+            position: relative;
+            min-height: 500px;
+        }
+        .header_tit {
+            padding: 50px 0 22px;
+            text-align: center;
+        }
+        .jz{ margin: 0 auto;}
+        .header_tit_txt {
+            font-size: 30px;
+            color: #424242;
+            font-weight: normal;
+            margin-top: 22px;
+        }
+        input{
+            width: 326px;
+            height: 22px;
+            line-height: 22px;
+            padding: 13px 16px 13px 14px;
+            display: block;
+            outline: none;
+            margin: 0 auto;
+            color: #333;
+            margin-top: 15px;
+        }
+        .btn_orange {
+            background-color: #ef5b00;
+        }
+        .btnadpt {
+            width: 360px;
+            height: 50px;
+            display: block;
+            margin-bottom: 14px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            margin: 30px auto;
+        }
+        .lang-select-list{
+            margin: 0 auto;
+            position: absolute;
+            left: 39%;
+        }
+        .lang-select-list li{
+
+            float: left;
+            color: #333333;
+
+            width: 60px;
+        }
+        .lang-select-list a {
+            text-decoration: none;
+            color: #333333;
+        }
+        .regin input.ok {
+            border-color:blue;
+        }
+
+        .regin input.error {
+            border-color:yellow;
+        }
+
+        .regin span {
+            display: none;
+            margin-left: 25px;
+            height: 35px;
+            line-height: 35px;
+            color: red;
+            letter-spacing: 1px;
+        }
+        .header_tit span{ display: none;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="layout" id="layout">
+                <div class="header_tit">
+                    <div class="jz"><img src="img/login.png"> </div>
+                    <h4 class="header_tit_txt">小米账号登陆</h4>
+
+                    <input id="userEmail" placeholder="邮箱/手机号/小米账号" type="text">
+                    <span id="spanEmail">22</span>
+                    <input id="paw" placeholder="密码" type="text">
+                    <span id="spanEmai3">33</span>
+                    <input class="btn_orange btnadpt" placeholder="立即登陆" type="submit">
+
+                </div>
+            </div>
+
+        </div>
+        <ul class="lang-select-list">
+            <li><a href="#">简体</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;|</li>
+            <li><a href="#">繁体</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+            <li><a href="#" >English</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+            <li><a href="#" >常见问题</a></li>
+        </ul>
+    </div>
+<script type="text/javascript">
+    var paw=document.getElementById("paw"),spanEmai3 = document.getElementById("spanEmai3"),
+            userEmail = document.getElementById("userEmail"), spanEmail = document.getElementById("spanEmail");
+            paw.onfocus=function(){
+        paw.className="ok";
+        spanEmai3.style.display=="none";
+    }
+    paw.onblur = function () {
+        var val = this.value;
+        if (val.length === 0) {
+            this.className = "error";
+            spanEmai3.style.display = "block";
+            spanEmai3.innerHTML = "请输入您的密码~~";
+            return;
+        }
+        var reg=/[0-9 | A-Z | a-z]{6,16}/;
+        if (!reg.test(val)) {
+            this.className = "error";
+            spanEmai3.style.display = "block";
+            spanEmai3.innerHTML = "您输入的密码不符合格式~~";
+            return;
+        }
+        this.className = null;
+        spanEmai3.style.display = "none";
+    }
+    userEmail.onfocus = function () {
+        userEmail.className="ok";
+        spanEmail.style.display=="none";
+    }
+    userEmail.onblur = function () {
+        var val = this.value;
+
+        val = val.replace(/(^ +| +$)/g, "");
+        if (val.length === 0) {
+            this.className = "error";
+            spanEmail.style.display = "block";
+            spanEmail.innerHTML = "请输入您的邮箱~~";
+            return;
+        }
+        var reg = /^\w+((-\w+)|(\.\w+))*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if (!reg.test(val)) {
+            this.className = "error";
+            spanEmail.style.display = "block";
+            spanEmail.innerHTML = "您输入的邮箱不符合格式~~";
+            return;
+        }
+        this.className = null;
+        spanEmail.style.display = "none";
+    }
+</script>
+</body>
+</html>

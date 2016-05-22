@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{ width: 900px; margin: 100px auto; overflow: hidden; height: 200px;
+            border: 1px solid red; position: relative;}
+        .arrow1{ width: 100px; height: 100px; position: absolute; background: darkgreen;}
+        .arrow2{ width: 100px; height: 100px; position: absolute; background: darkgreen;left: 1000px;
+            top: 10px;  }
+
+        .boxcent2{ width:3600px; height: 200px; position:absolute;transition: left 1s }
+        .n1{ width: 900px; height: 200px; background: red; float: left;}
+        .n2{ width: 900px; height: 200px; background: blue;float: left;}
+        .n3{width: 900px; height: 200px; background: green;float: left;}
+        .n4{width: 900px; height: 200px; background: yellow;float: left;}
+    </style>
+</head>
+<body>
+<div class="arrow1" id="left"></div>
+<div class="arrow2" id="right"></div>
+<div class="box">
+        <div class="boxcent2" style="left: 0px;" id="show">
+            <div class="n1">1</div>
+            <div class="n2">2</div>
+            <div class="n3">3</div>
+            <div class="n4">4</div>
+        </div>
+</div>
+<script>
+
+    function zyqh(){
+        var left=document.getElementById("left");
+        var right=document.getElementById("right");
+        var show=document.getElementById("show");
+        var pl=10;
+        var setp=300;
+        var dqj=show.style.left;
+        var num=0;
+        right.onclick=function(){
+            var x2=parseInt(show.style.left);
+            var cont=1;
+            var zjl=-900;
+            if(x2<-1800)
+                return;
+            x2=x2+cont*zjl;
+            show.style.left=x2+"px";
+            cont++;
+        }
+        left.onclick=function(){
+            var x2=parseInt(show.style.left);
+            var zjl=900;
+            var cont1=1;
+            x2=x2+cont1*zjl;
+            if (x2>0){
+                return;
+            }
+            show.style.left=x2+"px";
+            cont1++;
+        }
+    }
+    zyqh();
+    var op=(function(){
+        var cont2=0;
+        var time=window.setInterval(function(){
+
+            cont2=cont2+50;
+            if(cont2==900){
+                cont2==900;
+                window.clearInterval(time);
+            }
+            console.log(cont2);
+        },1000);
+
+    }())
+
+</script>
+
+</body>
+</html>
